@@ -1,0 +1,44 @@
+	Gruop22 Bash Window’s terminal	
+		
+1	Посмотреть где я 			pwd
+2	Создать папку				mkdir foldername
+3	Зайти в папку				cd foldername
+4	Создать 3 папки				mkdir foldername1 foldername2 foldername3
+5	Зайти в любоую папку			cd foldername2
+6	Создать 5 файлов (3 txt, 2 json)	touch filename1.txt filename2.txt filename3.txt filename1.json filename2.json
+7	Создать 3 папки				mkdir foldername11 foldername12 foldername13
+8	Вывести список содержимого папки	ls -la, ls -l
+9	Открыть любой txt файл			vim filename.txt
+10	Написать туда любой текст		i texttexttexttexttexttext
+11	Сохранить и выйти.			ESC :wq
+12	Выйти из папки на уровень выше		Cd ../
+13	Переместить любые 2 файла, которые
+	вы создали, в любую другую папку.	mv filename1.txt filename2.txt Foldername/ 
+14	Скопировать любые 2 файла, которые
+	вы создали, в любую другую папку.	cp -f filename1.txt filename2.txt /D/Desktop/foldername
+15	Найти файл по имени			Find . Filename.txt
+16	Просмотреть содержимое в реальном
+	времени
+	(команда grep) изучите как работает.	cat filename.txt grep “pattern” filename.txt
+17	Вывести несколько первых строк
+	из текстового файла			head -n2 failename.txt (2 первые строки)
+18	Вывести несколько последних строк
+	из текстового файла			tail -n filename.txt
+19	Просмотреть содержимое длинного файла
+	(команда less) изучите как работает.	less -f filename.txt
+20	Вывести дату и время			Дата: date +"%d-%m-%y" Время: date +"%T"
+		
+	*	
+1	Отправить http запрос на сервер		curl "http://162.55.220.72:5005/object_info_3?name=Vadim&age=32&salary=1000"
+2	Написать скрипт который выполнит
+	автоматически пункты 3, 4, 5, 6, 7, 8, 13	vim script.sh 
+							#!bin/bash/
+							#
+							cd doc11
+							mkdir doc11 doc12 doc13
+							cd doc11
+							touch test1.txt test2.txt test3.txt test1.json test2.json
+							mkdir doc111 doc112 doc113
+							ls -la
+							mv tets1.txt test1.json Doc111/
+							ESC :wq
